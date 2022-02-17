@@ -1,0 +1,32 @@
+.message-container {
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  background: #252525;
+  box-sizing: border-box;
+  box-shadow: 12px 26px 50px rgba(90, 108, 234, 0.07);
+  border-radius: 15px;
+  margin-bottom: 17px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.message {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  align-self: start;
+}
+
+.message-time {
+  margin-left: 25px;
+  bottom: 5px;
+  left: 6px;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  align-self: end;
+}
