@@ -8,7 +8,15 @@ const Message = ({ id, message, click }) => {
   const date = new Date();
   const currHour = date.getHours();
   const currMin = date.getMinutes();
-  const currTime = `${currHour}:${currMin}`;
+  let currTime = `${currHour}:${currMin}`;
+
+  if (currHour < 10) {
+    currTime = `0${currHour}:${currMin}`;
+  } else if (currMin < 10) {
+    currTime = `${currHour}:0${currMin}`;
+  } else if (currHour < 10 && currMin < 10) {
+    currTime = `0${currHour}:0${currMin}`;
+  }
 
   return (
     <>
